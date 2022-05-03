@@ -11,4 +11,6 @@ provider:
 functions:
   gha_aws_serverless_nodejs:
     handler: src/handler.randomnumbergenerator
+    timeout: 120  #seconds
+    memorySize: 128 #mb
 
