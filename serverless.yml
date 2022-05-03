@@ -1,0 +1,14 @@
+service: aws-serverless-nodejs
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-northeast-1
+
+functions:
+  gha_aws_serverless_nodejs:
+    handler: src/handler.randomnumbergenerator
+
